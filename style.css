@@ -3,70 +3,86 @@ body {
     width: 960px;
     font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 18px;
+    color: #ebebeb;
+    text-align: center;
     background-color: #777;
+    overflow: auto;
+    margin: 0 auto;
 
 }
 
-.light-background {
-
-    background-color: #ebebeb;
-    
-}
-
-header {
-
-
-
-}
-
-nav {
-
-
-}
-
+header,
+nav,
 footer {
 
-
+    clear: both;
+    width: 100%;
+    height: 90px;
+        
 }
 
 section {
 
+    float: left;
     width: 495px;
+    height: 240px;
+
 }
 
 aside {
 
-    width: 455px;
-
+    float: right;
+    width: 445px;
+    height: 240px;
 
 }
 
 article {
 
+    background-color: #777;
+    color: #ebebeb;
+    width: 475px;
+    height: 160px;
+    margin: 10px;
+    padding: 4.5px 0;
+}
+
+.light-background {
+
+    background-color: #ebebeb;
+    color: #777;
+}
+
+.group:before,
+.group:after {
+  
+    content: "";
+    display: table;
 
 }
 
-h1 {
-
-
-}
-
-h2{
-
+.group:after {
+ 
+    clear: both;
 
 }
 
-h3 {
+.group {
 
+    height: 240px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.hnf p {
+
+    padding: 36px 0;
 
 }
 
-p {
+.nested {
 
-
-}
-
-.clear {
-
-
+    width: 455px;
+    height: 40px;
+    margin: 5px 10px;
 }
